@@ -1,0 +1,330 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+*,
+*:after,
+*::before {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+html {
+  background: #363B48 /*#202634 */
+  url(https://dl.dropboxusercontent.com/u/37821256/img/bg2.jpg) no-repeat center center fixed;
+  background: #363b48 linear-gradient(to bottom, #2b303b,  #2e333f) repeat; 
+  background-size: cover;
+  font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering:optimizeLegibility;
+}
+
+.wrap {
+  max-width: 740px;
+  margin: 5vh auto;
+  padding: 3vh 2vw 3vh 2vw;
+  background-color: rgba(32, 38, 52, 0.6);
+  border-radius: 5px;
+  -webkit-border-radius: 0px 0px 5px 5px;
+  -moz-border-radius: 0px 0px 5px 5px;
+}
+
+/* GRID */
+.parent {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.parent div img {
+  width: 100%;
+  height: auto;
+}
+
+.child {
+  flex: 1 0 25%;
+  min-width: 180px;
+  padding: 0 5px 5px 5px;
+  overflow: hidden;
+}
+
+.child > div {
+  background: #222;
+  color: #fff;
+}
+
+/* HEADER AND MENU */
+nav {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  transition-duration: 0.5s;
+  transition-timing-function: swing;
+  overflow: hidden;
+  color: rgba(127, 133, 147, 0.8);
+}
+nav.open {
+  height: 250px;
+}
+nav .logo {
+  margin: 40 0 0 15px;
+  margin-left: 5px;
+  font-size: 0.8em;
+  letter-spacing: 3px;
+}
+nav ul {
+  padding-top: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+nav ul li {
+  list-style: none;
+  text-align: center;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 10px 0;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: rgba(127, 133, 147, 0.8);
+}
+nav ul li a:hover {
+  width: 100%;
+  background-color: rgba(54,59,72, 0.5);
+  transition: background-color .3s;
+}
+
+nav ul li a:active {
+  width: 100%;
+  color: #E86065;
+  background-color: rgba(54,59,72, 0.5);
+  transition: background-color .3s;
+}
+
+nav ul li.current > a:visited {
+  width: 100%;
+  color: #E86065;
+  background-color: rgba(54,59,72, 0);
+  transition: background-color .3s;
+}
+
+
+.navToggle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0px;
+  right: -8px;
+  transition-duration: 0.5s;
+}
+.navToggle .icon {
+  transition-duration: 0.25s;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: 30px;
+  left: 15px;
+  background-color: #afafaf;
+}
+.navToggle .icon:before,
+.navToggle .icon:after {
+  transition-duration: 0.25s;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #afafaf;
+  content: "";
+}
+.navToggle .icon:before {
+  top: -7px;
+  left: 0;
+}
+.navToggle .icon:after {
+  top: 7px;
+  left: 0;
+}
+.navToggle:hover {
+  cursor: pointer;
+}
+.navToggle:hover .icon:before {
+  top: -10px;
+}
+.navToggle:hover .icon:after {
+  top: 10px;
+}
+.navToggle.open {
+  transition-duration: 1s;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+.navToggle.open .icon {
+  transition-duration: 0.5s;
+  background-color: transparent;
+}
+.navToggle.open .icon:before {
+  transition-duration: 0.5s;
+  top: 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.navToggle.open .icon:after {
+  transition-duration: 0.5s;
+  top: 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+
+/* FOOTER */
+footer {
+  max-width: 600px;
+  margin: 1.5em auto 2em auto;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.75;
+  color: #6e7482;
+}
+
+footer a {
+  color: #6e7482;
+  text-decoration: none;
+}
+
+/* OTHER */
+hr.style-two {
+  border: 0;
+  height: 1px;
+  margin-bottom: 1em;
+  background-image: linear-gradient(left, rgba(70, 76, 82, 0.1), rgba(70, 76, 82, 1), rgba(70, 76, 82, 0.1));
+}
+
+
+@media screen and (max-width: 600px) {
+  .wrap {
+    margin: 0;
+    padding: 0 5px 15px 5px;
+  }
+  footer{display: none;}
+  .child{
+    padding: 0 0.5vw;}
+}
+
+/* RESPONSIVE PAGINATION */
+
+.pagination {margin: 10px 0 10px -38px; }
+.pagination,
+.pagination li a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.pagination a {
+  font-weight: 300;
+  text-decoration:none;  
+  min-width:10px;
+  min-height:10px;
+  margin: 1px;
+  padding: 3px 5px;
+  color: rgba(100,100,100,1);  
+}
+
+.pagination li:not([class*="current"]) a:hover { 
+  background: rgba(160,168,189, 0.15);
+  color: #E7ECEE;
+}
+
+.pagination li:not([class*="current"]) a:focus,
+.pagination li:not([class*="current"]) a:active {;
+  background: #e1e1e1;
+}
+
+.pagination li:first-of-type a {
+  border-left-width: 1px;
+}
+
+.pagination li:first-of-type span,
+.pagination li:last-of-type span,
+.pagination li:nth-of-type(2) span,
+.pagination li:nth-last-of-type(2) span { 
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.pagination li:first-child a::before,
+.pagination li:last-child a::after,
+.pagination li:nth-of-type(2) a::before,
+.pagination li:nth-last-of-type(2) a::after {  
+  display: inline-block;
+  font-family: Fontawesome;  
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.pagination li:first-child a::before,
+.pagination li:last-child a::after { content: "\f100"; }
+
+.pagination li:nth-of-type(2) a::before,
+.pagination li:nth-last-of-type(2) a::after { content: "\f104"; }
+
+.pagination li:last-child a::after,
+.pagination li:nth-last-of-type(2) a::after { transform: rotate(180deg); }
+
+.pagination li.current a { 
+
+  color: rgba(255,255,255,1);
+  color: #E86065;
+  background-color: rgba(55,55,55,.5);
+  cursor: default;
+  pointer-events: none;
+}
+
+@media only screen and ( max-width: 1025px ) {  
+  .pagination li:first-child,
+  .pagination li:last-child {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .pagination li:nth-of-type(2) a { border-left-width: 1px; }
+
+}
+
+@media only screen and ( max-width: 641px ) {  
+  .pagination li {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .pagination li.current,
+  .pagination li:first-of-type,
+  .pagination li:last-of-type,
+  .pagination li:nth-of-type(2),
+  .pagination li:nth-last-of-type(2){
+    position: initial;
+    top: initial;
+    left: initial;
+  }
+
+  .pagination li:nth-of-type(2) a { border-left-width: 0; }
+
+}
+
+@media only screen and ( max-width: 481px ) {    
+  .pagination li:first-child,
+  .pagination li:last-child {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .pagination li:nth-of-type(2) a { border-left-width: 1px; }
+}
