@@ -1,0 +1,96 @@
+body {
+  background: #FF3232;
+  color: #f3f3f3;
+  font-family: 'Space Mono', monospace;
+  font-size: 3em;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type=number] {
+  background: #f3f3f3;
+  width: 35px;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  border: 1px solid #eee;
+  outline: 0;
+}
+
+.buttons {
+  margin-bottom: 40px;
+}
+
+.buttons button {
+  background: #f1c40f;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Baloo Thambi';
+  font-size: 25px;
+  width: 250px;
+  height: 50px;
+  border: 1px solid #f1c40f;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.buttons button:hover {
+  background-color: #f2ca2a;
+  -webkit-box-shadow: 0px 4px 0px rgba(243, 163, 36, 1);
+  -moz-box-shadow: 0px 4px 0px rgba(243, 163, 36, 1);
+  box-shadow: 0px 4px 0px rgba(243, 163, 36, 1);
+}
+
+h1 {
+  margin: 0;
+}
+
+/* JS CLASSLIST*/
+
+.winning-color {
+  color: #FFFF66;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 1020px){
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }  
+}
+
+@media (max-width: 840px) {
+  
+  .buttons button {
+    width: 180px;
+  }
+}
+
+@media (max-width: 630px) {
+  
+  body {
+    font-size: 2em;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .buttons button {
+    width: 290px;
+    margin-bottom: 10px;
+  }
+  
+}
