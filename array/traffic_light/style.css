@@ -1,0 +1,41 @@
+.box {
+    background-color: bisque;
+    height: 400px;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.traffic-light {
+    height: 200px;
+    width: 600px;
+    background-color: rgb(204, 197, 197);
+    border: 2px solid gray;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.item {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(204, 197, 197);
+    border: 2px solid gray;
+    border-radius: 20px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 200px;
+    cursor: pointer;
+
+}
