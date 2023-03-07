@@ -1,0 +1,15 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+img {
+	margin: 20px;
+}
+
+.bordered {
+	border: 2px solid black;
+	box-shadow: 0 0 10px black;
+}
