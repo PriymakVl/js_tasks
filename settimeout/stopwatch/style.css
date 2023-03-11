@@ -1,0 +1,37 @@
+body {
+  text-align: center;
+  background-color: #ffa600;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 52px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+#timer {
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+button {
+  padding: 15px 40px;
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 22px;
+  margin: 0 15px;
+  outline: none;
+  cursor: pointer;
+  text-transform: lowercase;
+  transition: .5s
+}
+
+button:hover{
+  color: #ffa600;
+  background-color: #fff;
+}
