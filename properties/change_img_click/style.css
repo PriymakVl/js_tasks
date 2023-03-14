@@ -1,0 +1,29 @@
+body {
+	text-align: center;
+}
+
+.box img {
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	border: 2px solid #ADD8E6;
+	padding: 5px;
+	transition: .6s;
+}
+
+.box img:hover {
+	cursor: pointer;
+	border-color: #4169E1;
+}
+
+#big-img {
+	margin: 30px auto 0;
+	padding: 5px;
+	height: 300px;
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ADD8E6;
+}
+
