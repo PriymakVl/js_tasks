@@ -1,57 +1,50 @@
-var p1 = document.getElementById('p1');
-var p2 = document.getElementById('p2');
-var resetButton = document.getElementById('reset');
-var p1Tally = document.querySelector('.p1-score');
-var p2Tally = document.querySelector('.p2-score');
-var inputNumber = document.querySelector('input');
-var winningScoreDisplay = document.querySelector('#score-goal');
-var winner = document.querySelector('#winner');
-var p1Score = 0;
-var p2Score = 0;
+const btnP1 = document.getElementById('p1');
+const btnP2 = document.getElementById('p2');
+const btnReset = document.getElementById('reset');
+const scoreP1 = document.querySelector('.p1-score');
+const scoreP2 = document.querySelector('.p2-score');
+var winEl = document.querySelector('#winner');
+var numP1 = 0;
+var numP2 = 0;
 var gameOver = false;
-var winningScore = 5;
+var winScore = 3;
 
-p1.addEventListener('click', function () {
-  if (!gameOver) {
-    p1Score++;
-    if (p1Score === winningScore) {
+btnP1.onclick = showScoreP1;
+btnP2.onclick = showScoreP2;
+btnReset.onclick = reset;
+
+function showScoreP1() {
+  if (gameOver == false) {
+    numP1++;
+    if (numP1 === winScore) {
       gameOver = true;
-      p1Tally.classList.add('winning-color');
-      winner.textContent = 'PLAYER 1 WINS!!';
+      scoreP1.style.color = 'yellow';
+      winEl.innerText = 'Победил первый игрок!!!';
     }
-    p1Tally.textContent = p1Score;
+    scoreP1.innerText = numP1;
   }
-});
-
-p2.addEventListener('click', function () {
-  if (!gameOver) {
-    p2Score++;
-    if (p2Score === winningScore) {
-      gameOver = true;
-      p2Tally.classList.add('winning-color');
-      winner.textContent = 'PLAYER 2 WINS!';
-    }
-    p2Tally.textContent = p2Score;
-  }
-});
-
-resetButton.addEventListener('click', function () {
-  reset();
-});
-
-function reset() {
-  p1Score = 0;
-  p2Score = 0;
-  p1Tally.textContent = p1Score;
-  p2Tally.textContent = p2Score;
-  p1Tally.classList.remove('winning-color');
-  p2Tally.classList.remove('winning-color');
-  gameOver = false;
-  winner.textContent = '';
 }
 
-inputNumber.addEventListener('change', function () {
-  winningScoreDisplay.textContent = inputNumber.value;
-  winningScore = Number(inputNumber.value);
-  reset();
-});
+function showScoreP2() {
+  if (gameOver == false) {
+    numP2++;
+    if (numP2 === winScore) {
+      gameOver = true;
+      scoreP2.style.color = 'yellow';
+      winEl.innerText = 'Победил второй игрок!!!';
+    }
+    scoreP2.innerText = numP2;
+  }
+}
+
+function reset() {
+  numP1 = 0;
+  numP2 = 0;
+  scoreP1.innerText = numP1;
+  scoreP2.innerText = numP2;
+  scoreP1.style.color = 'white';
+  scoreP2.style.color = 'white';
+  gameOver = false;
+  winEl.innerText = '';
+}
+
