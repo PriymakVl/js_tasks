@@ -12,7 +12,7 @@ function startSlider() {
   currentImg++;
   if (currentImg == imgsEl.length) currentImg = 0;
   imageContainerEl.style.transform = `translateX(-${(currentImg) * 500}px)`;
-  timeout = setTimeout(updateImg, 3000);
+  timeout = setTimeout(startSlider, 3000);
 }
 
 function stopSlider() {
