@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: green; */
+}
+
+.btn {
+    font-size: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: tomato;
+}
