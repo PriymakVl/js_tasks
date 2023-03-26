@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    /* border: 5px dotted blueviolet; */
+}
+
+.btn-wrp {
+    margin-top: 30px;
+}
+
+button {
+    margin: 5px;
+    cursor: pointer;
+}

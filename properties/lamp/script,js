@@ -1,0 +1,19 @@
+const btnOn = document.querySelector('#on');
+const btnOff = document.querySelector('#off');
+const lamp = document.querySelector('#lamp');
+const body = document.querySelector('body');
+
+btnOn.onclick = turnonLamp;
+btnOff.onclick = turnoffLamp;
+
+function turnonLamp() {
+    body.style.backgroundColor = 'grey';
+    lamp.src = 'img/on_lamp.gif';
+}
+
+function turnoffLamp() {
+    body.style.backgroundColor = 'black';
+    lamp.src = 'img/off_lamp.gif';
+}
+
+
