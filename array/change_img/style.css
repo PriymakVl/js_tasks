@@ -1,0 +1,20 @@
+.container {
+    width: 700px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.img-wrp {
+    width: 250px;
+    height: 250px;
+    margin: 30px auto 0;
+    border: 2px solid grey;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+#img {
+    height: 100%;
+}
+
