@@ -4,6 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-family: cursive;
   background-color: slateblue;
 }
@@ -43,3 +44,12 @@ body {
   color: darkgray;
   font-weight: 500;
 }
+
+#lang {
+  font-size: 20px;
+  padding: 5px 30px;
+  margin-top: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

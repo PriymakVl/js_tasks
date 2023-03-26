@@ -2,18 +2,29 @@ const monthNameEl = document.getElementById("month-name");
 const dayNameEl = document.getElementById("day-name");
 const dayNumEl = document.getElementById("day-number");
 const yearEl = document.getElementById("year");
+const langEl = document.getElementById('lang');
+const now = new Date();
 
-const weekdays = [
-    'Воскресенье',
-    'Понедельник', 
-    'Вторник', 
-    'Среда', 
-    'Четверг', 
-    'Пятница',
-    'Суббота',
+const weekDaysRu = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+const weekDaysUa = ['Неділя', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П`ятниця', 'Субота'];
+
+const monthUa = [
+    'Січень',
+    'Лютий',
+    'Березень',
+    'Квітень',
+    'Травень',
+    'Червень',
+    'Липень',
+    'Серпень',
+    'Вересень',
+    'Жовтень',
+    'Листопад',
+    'Грудень'
 ]
 
-const months = [
+
+const monthsRu = [
     'Январь',
     'Февраль',
     'Март',
@@ -28,12 +39,36 @@ const months = [
     'Декабрь',
 ]
 
-const now = new Date();
+langEl.onchange = setLangCalendar;
 
-monthNameEl.innerText = months[now.getMonth()];
+function setLangCalendar() {
+    lang = langEl.value;
+    monthNameEl.innerText = getMonth();
+    dayNameEl.innerText = getWeekDay();
+    dayNumEl.innerText = now.getDate();
+    yearEl.innerText = now.getFullYear();
+}
 
-dayNameEl.innerText = weekdays[now.getDay()];
+function getMonth() {
+    if (lang == 'en') return now.toLocaleString('en', {month: 'long'});
+    if (lang == 'ru') return monthsRu[now.getMonth()];
+    return monthUa[now.getMonth()];
+}
 
-dayNumEl.innerText = now.getDate();
+function getWeekDay() {
+    if (lang == 'en') return now.toLocaleString('en', {weekday: 'long'});
+    if (lang == 'ru') return weekDaysRu[now.getDay()];
+    return weekDaysUa[now.getDay()];
+}
 
-yearEl.innerText = now.getFullYear();
+setLangCalendar();
+
+
+
+
+
+
+
+
+
+
