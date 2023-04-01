@@ -1,0 +1,14 @@
+body {
+	background-color: #000;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#clock {
+	color: #17d4fe;
+	font-size: 60px;
+	letter-spacing: 7px;
+}
+
