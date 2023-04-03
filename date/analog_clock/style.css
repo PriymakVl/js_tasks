@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#clock {
+    position: relative;
+    background-image: url(img/face.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 440px;
+    width: 440px;
+    margin: auto;
+}
+
+#hour, #minute, #second {
+    background: black;
+    position: absolute;
+    border-radius: 10px;
+}
+
+#hour {
+    transform-origin: bottom;
+    width: 2%;
+    height: 22%;
+    top: 28%;
+    left: 48.8%;
+}
+
+#minute {
+    transform-origin: bottom;
+    width: 1.6%;
+    height: 30%;
+    top: 21%;
+    left: 50%;
+    opacity: 0.8;
+}
+
+
+#second{
+    transform-origin: bottom;
+    width: 1%;
+    height: 33%;
+    top: 17%;
+    left: 49.3%;
+    opacity: 0.6;
+}
