@@ -11,7 +11,7 @@ resetBtn.onclick = resetTimer;
 
 function startTimer () {
   seconds++;
-  timerEl.innerText = (seconds > 10) ? seconds : '0' + seconds;
+  timerEl.innerText = (seconds < 10) ? '0' + seconds : seconds ;
   clearId = setTimeout(startTimer, 1000);
 }
 
