@@ -1,0 +1,24 @@
+body {
+  background: black
+}
+
+.circle {
+  border: 0 solid purple;
+  position: absolute;
+  border-radius: 50%;
+  animation-name: circle;
+  animation-duration: 2s;
+}
+
+@keyframes circle {
+  from {
+    width: 15px;
+    height: 15px;
+  }
+  to {
+    width: 80px;
+    height: 80px;
+    border-width: 10px;
+    opacity: 0;
+  }
+}
