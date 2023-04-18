@@ -11,6 +11,7 @@ month = now.getMonth() + 1;
 month = addZero(month);
 
 year = now.getFullYear();
+year = year % 100;
 
 date.innerText = day + '.' + month  + '.' + year;
 
