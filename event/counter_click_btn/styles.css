@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.value {
+  font-size: 6rem;
+  color: blue;
+}
+
+.btn {
+  display: inline-block;
+  height: 40px;
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.minus {
+  background-color: red;
+  width: 40px;
+}
+
+.plus {
+  background-color: green;
+   width: 40px;
+}
