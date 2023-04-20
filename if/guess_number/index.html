@@ -11,34 +11,24 @@
 <body>
 
 <div class="container">
-  <div class="canvas">
     <div class="desc">
-      <h1 class="desc__title">Игра: угадай число</h1>
-      <p class="desc__subtitle">
-        Компьютер загадал число от 1 до 100. Ваша задача его угадать.
-      </p>
+      <h1 class="title">Игра: угадай число</h1>
+      <ul class="task">
+        <li>Компьютер загадал число от 1 до 100.</li>
+        <li>Ваша задача его угадать за 10 попыток</li>
+      </ul>
     </div>
     <div class="field">
-      <label for="" class="filed__form__label">Ваше число: </label>
-      <input type="text" class="field__form__input" />
-      <button class="field__form__btn">Проверить</button>
+      <label for="number" class="label">Ваше число: </label>
+      <input type="text" id="number">
+      <button class="btn">Проверить</button>
     </div>
-    <div class="result">
-      <div class="result__check">
-        <span class="result__check__label">Результат:</span>
-        <span class="result__check__out"></span>
-      </div>
-      <div class="result__help">
-        <span class="result__help">Подсказка:</span>
-        <span class="result__help__out"></span>
-      </div>
-      <div class="result__count">
-        <span class="result__count__label">Число попыток:</span>
-        <span class="result__count__out"></span>
-      </div>
+    <div class="result-wrp">
+      <div>Результат: <span class="result"></span></div>
+      <div>Подсказка: <span class="help"></span></div>
+      <div>Число попыток: <span class="count"></span></div>
     </div>
   </div>
-</div>
 
 <script src="script.js"></script>
 </body>
