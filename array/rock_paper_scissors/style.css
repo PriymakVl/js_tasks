@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0 15px;
+    font-size: 27px;
+}
+
+h1 span {
+    color: #4013AF;
+}
+
+#demo {
+    text-align: center;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container .section {
+    width: 350px;
+    margin: 20px 50px;
+}
+
+.section .info {
+    background: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.info span , .info h3 {
+    font-size: 25px;
+    margin: 0px 10px;
+    color: white;
+}
+
+.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background : #292828;
+    height: 220px;
+}
+
+.show img {
+    height: 150px;
+}
+
+.selection{
+    margin: 30px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin: 0 20px;
+    padding: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color : #292828;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: #4013AF;
+}
+
+.btn img {
+    height: 40px;
+}
+
