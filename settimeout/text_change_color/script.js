@@ -1,31 +1,29 @@
 i = 0;
-const startBtn = document.querySelector('#start');
-const stopBtn = document.querySelector('#stop');
+const btnEl = document.querySelector('.btn');
 const textEl = document.querySelector('#text');
-let clearId;
+let timerId;
+let included = false;
+let colors = ["red", "green", "blue"];
 
-startBtn.addEventListener('click', startChangeColor);
-startBtn.addEventListener('click', toggleBtn);
-stopBtn.addEventListener('click', stopChangeColor);
+btnEl.onclick = () => {
+    if (included == false) {
+        changeColor();
+        included = true;
+        btnEl.textContent = 'Остановить скрипт';
+    }
+    else {
+        clearTimeout(timerId);
+        textEl.style.color = 'black';
+        btnEl.textContent = 'Запустить скрипт';
+    }
+}
 
-function startChangeColor() {
-	let colors = ["red", "green", "blue", "gold", "coral", "pink"];
+function changeColor() {
 	if (i == colors.length) {
 		i = 0;
 	}
     textEl.style.color = colors[i];
 	i++ ;
-	clearId = setTimeout(startChangeColor, 1000);
+	timerId = setTimeout(changeColor, 2000);
 }
 
-function toggleBtn() {
-    startBtn.style.display = 'none';
-    stopBtn.style.display = 'inline-block';
-}
-
-function stopChangeColor() {
-    clearTimeout(clearId);
-    stopBtn.style.display = 'none';
-    startBtn.style.display = 'inline-block';
-    textEl.style.color = '#000';
-}
