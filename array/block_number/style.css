@@ -1,7 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: sans-serif;
   height: 100vh;
 }
 
@@ -13,7 +20,8 @@ body {
 
 #num {
   width: 200px;
-  height: 30px;
+  padding: 5px 0 5px 15px;
+  font-size: 20px;
 }
 
 .block-wrp {
@@ -36,5 +44,6 @@ body {
   transition: background-color 0.3s ease-out;
   border-radius: 5px;
   line-height: 100px;
+  font-size: 24px;
 }
 
