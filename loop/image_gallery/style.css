@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: teal;
+  font-size: 2rem;
+  background: #07252e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.img-box {
+  border-radius: 10px;
+  border: 3px solid teal;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 3rem;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.close, .previous, .next {
+  position: absolute;
+  color: gray;
+  opacity: 0.7;
+  user-select: none;
+  cursor: pointer;
+  transition: 200ms ease-in;
+}
+
+.close:hover, .previous:hover, .next:hover {
+  opacity: 1;
+}
+
+.modal .close {
+  font-size: 3rem;
+  font-weight: bold;
+  top: 1rem;
+  left: 2rem;
+}
+
+.previous {
+  font-size: 4rem;
+  top: 37%;
+  left: 2rem;
+}
+
+.next {
+  font-size: 4rem;
+  top: 37%;
+  right: 2rem;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  height: 80%;
+  border: 0.1rem solid teal;
+  /* border-radius: 0.5rem; */
+  padding: 5px;
+}
+
+.modal .caption {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  text-align: center;
+  color: gray;
+  margin-top: 1rem;
+}
