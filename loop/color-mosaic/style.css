@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
+
+* {
+  font-family: "Oxygen", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid blue;
+}
+
+header h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+header button {
+  padding: 5px 10px 5px 10px;
+  background: none;
+  border: 1px solid blue;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.colors {
+  display: flex;
+}
+
+.colors input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.colors label {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 10px;
+  cursor: pointer;
+  opacity: .4;
+}
+
+input:checked + label {
+  opacity: 1;
+}
+
+label[for="red"] {
+  background-color: red;
+}
+
+label[for="green"] {
+  background-color: green;
+}
+
+label[for="blue"] {
+  background-color: blue;
+}
+
+label[for="white"] {
+  background-color: white;
+}
+
+label[for="yellow"] {
+  background-color: yellow;
+}
+
+#btn-wrap {
+  position: relative;
+}
+
+/* instructions */
+#instructions {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 300px;
+  background: black;
+  border: 1px solid blue;
+  padding: 40px 0 15px 40px;
+  display: none;
+}
+
+#instructions #close-btn {
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  cursor: pointer;
+}
+
+#instructions h3 {
+  margin-bottom: 20px;
+}
+
+#instructions ul {
+  line-height: 1.5rem;
+}
+
+#surface-area {
+  margin: 25px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 800px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid blue;
+  margin: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+
+

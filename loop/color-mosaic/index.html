@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Color Mosaic</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header>
+    <h1>Color Mosaic</h1>
+    <!-- colors -->
+    <div class="colors">
+      <input type="radio" name="color" id="red">
+      <label for="red"></label>
+      <input type="radio" name="color" id="green">
+      <label for="green"></label>
+      <input type="radio" name="color" id="blue">
+      <label for="blue"></label>
+      <input type="radio" name="color" id="white">
+      <label for="white"></label>
+      <input type="radio" name="color" id="yellow">
+      <label for="yellow"></label>
+    </div>
+    <!-- buttons  -->
+    <div id="btn-wrap">
+      <button id="instructions-btn">How It Works</button>
+      <!-- instructions -->
+      <div id="instructions">
+        <div id="close-btn">&times;</div>
+        <h3>How It Works</h3>
+        <ul>
+          <li>Choose color</li>
+          <li>Click a circle to add a color</li>
+          <li>Double click to remove color</li>
+          <li>Click Reset All to start over</li>
+        </ul>
+      </div>
+      <button id="reset-all-btn">Reset All</button>
+    </div>
+  </header>
+  
+  <main id="surface-area"></main>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
