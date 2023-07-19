@@ -25,7 +25,7 @@ function showImages(className) {
 allImages.forEach(img => {
     img.addEventListener('click', (e)=>{
         modal.style.display = 'flex';
-        document.querySelector('.modal img')  = e.target.src;
+        document.querySelector('.modal img').src  = e.target.src;
     });
 });
 
