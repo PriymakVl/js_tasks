@@ -24,3 +24,11 @@ div {
 .center {
     z-index: 1;
 }
+
+.left {
+    background-color: green;
+}
+
+.right {
+    background-color: blue;
+}

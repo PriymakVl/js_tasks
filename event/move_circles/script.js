@@ -1,8 +1,16 @@
 let center = document.querySelector('.center');
+let right = document.querySelector('.right');
+let left = document.querySelector('.left'); 
 
-center.onclick = moveCircles
+center.onmouseover = moveCircles
+center.onmouseout = backCircles
 
 function moveCircles() {
-    document.querySelector('.right').style.left = '25%';
-    document.querySelector('.left').style.left = '75%';
+    right.style.left = '25%';
+    left.style.left = '75%';
+}
+
+function backCircles() {
+    right.style.left = '50%';
+    left.style.left = '50%';
 }

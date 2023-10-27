@@ -1,20 +1,23 @@
-// Получаем ссылки на кнопку и квадрат
-var btn = document.getElementById('btn');
-var square = document.getElementById('square');
+let btn = document.getElementById('btn');
+let square = document.getElementById('square');
 
-// Устанавливаем начальный цвет фона квадрата
-var isGreen = false;
+let bg = 'red';
 
-// Добавляем обработчик событий на клик по кнопке
-btn.addEventListener('click', changeColor);
 
-// Функция для изменения цвета фона квадрата
-function changeColor() {
-  if (isGreen) {
-    square.style.backgroundColor = 'red';
-	isGreen = false;
-  } else {
+btn.addEventListener('click', changeBg);
+
+
+function changeBg() {
+  if (bg == 'red') {
     square.style.backgroundColor = 'green';
-	isGreen = true;
+	  bg = 'green';
+  } 
+  else if (bg == 'green') {
+    square.style.backgroundColor = 'blue';
+	  bg = 'blue'
+  }
+  else {
+    square.style.backgroundColor = 'red';
+	  bg = 'red'
   }
 }
