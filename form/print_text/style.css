@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.input {
+    font-size: 20px;
+    padding: 5px 5px 5px 15px;
+    border: 2px solid black;
+    width: 100%;
+    color: gray;
+}
+
+.out {
+    margin-top: 30px;
+    width: 400px;
+    min-height: 100px;
+    padding: 5px;
+    border: 2px solid black;
+    font-size: 24px;
+}
