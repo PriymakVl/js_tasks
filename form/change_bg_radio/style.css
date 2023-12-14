@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+.label-light, .label-dark {
+  display: block;
+  margin: 20px;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  color: #AACCFF;
+}
+
+#dark, #light {
+  transform: scale(1.5);
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+
+

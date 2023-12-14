@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+label {
+  font-size: 24px;
+  font-family: sans-serif;
+  margin-right: 25px;
+  text-transform: lowercase;
+}
+
+input {
+  transform: scale(1.5);
+  margin-right: 5px;
+}
+
+.box {
+  background: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin: 40px auto 0;
+  border: 10px solid red;
+}
