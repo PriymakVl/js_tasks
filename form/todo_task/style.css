@@ -1,0 +1,50 @@
+body {
+    background-color: RGB(194, 178, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+	background-color: RGB(67, 7, 125);
+	color: white;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.788);
+	max-width: 400px;
+	border-radius: 10px;
+}
+
+h1 {
+	color: #fff;
+	text-align: center;
+}
+
+#taskInput {
+	padding: 10px;
+	margin: 10px;
+}
+
+#addButton {
+	padding: 10px;
+	background-color: #0062ff;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+#taskList {
+	list-style-type: decimal;
+	padding: 0;
+}
+
+#taskList li {
+	background-color: RGB(156, 65, 244);
+	color: #fff;
+	padding: 10px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
