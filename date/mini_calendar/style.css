@@ -9,39 +9,40 @@ body {
   background-color: slateblue;
 }
 
-.calendar-container {
+#calendar {
   background-color: white;
   width: 300px;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
-.month-name {
+#month {
   margin: 0;
   background-color: orangered;
   color: white;
   padding: 10px;
   font-size: 30px;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
-.day-name {
+#day-name {
   font-size: 20px;
-  color: darkgray;
+  color: #666;
+  text-transform: capitalize;
 }
 
-.day-number {
+#day-number {
   font-size: 80px;
   margin: 0;
   font-weight: bold;
 }
 
-.year {
+#year {
   margin: 20px 0;
   font-size: 20px;
-  color: darkgray;
+  color: #666;
   font-weight: 500;
 }
 

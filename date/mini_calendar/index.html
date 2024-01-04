@@ -9,18 +9,19 @@
 </head>
 <body>
 
-  <div class="calendar-container">
-    <p class="month-name" id="month-name">Апрель</p>
-    <p class="day-name" id="day-name">Пятница</p>
-    <p class="day-number" id="day-number">20</p>
-    <p class="year" id="year">2020</p>
-  </div>
-  <select name="lang" id="lang">
-    <option value="en">English</option>
-    <option value="ua">Український</option>
-    <option value="ru">Руский</option>
-  </select>
+<div id="calendar">
+  <p id="month"></p>
+  <p id="day-name"></p>
+  <p id="day-number"></p>
+  <p id="year"></p>
+</div>
+<!-- select lang -->
+<select id="lang">
+  <option value="en">English</option>
+  <option value="uk-UA">Український</option>
+  <option value="ru-RU">Русский</option>
+</select>
 
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
