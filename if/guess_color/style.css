@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #020c02;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	overflow: hidden;
+}
+
+h1 {
+	font-family: 'Special Elite', monospace;
+	margin-bottom: 20px;
+	color: #fff;
+	letter-spacing: 5px;
+}
+
+.color-code {
+	font-size: 30px;
+	font-family: 'Special Elite', monospace;
+	color: yellow;
+	margin-bottom: 20px;
+	letter-spacing: 3px;
+	padding: 15px;
+	border: 2px solid yellow;
+	display: none;
+}
+
+.color-wrp {
+	display: none;
+	grid-template-columns: 150px 150px;
+	grid-template-rows: repeat(2, 150px);
+	gap: 20px;
+}
+
+.color {
+	background-color: #f00;
+	cursor: pointer;
+}
+
+#start-btn {
+	padding: 10px 20px;
+	font-size: 35px;
+	letter-spacing: 5px;
+	background: linear-gradient(to right, red, orange, yellow, green, blue, purple, hotpink);
+	border: solid 3px #fff;
+	font-family: 'Special Elite', monospace;
+	cursor: pointer;
+}
+
+#start-btn:hover {
+	font-weight: bold;
+}
+
