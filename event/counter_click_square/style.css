@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	height: 100vh;
+	font-family: Arial sans-serif;
+}
+
+h1 {
+	font-style: italic;
+	color: #555;
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+.points {
+	color: coral;
+	font-weight: bold;
+}
+
+.field {
+	height: 500px;
+	width: 500px;
+	border: 2px solid gray;
+	background-color: #fff;
+	position: relative;
+	box-shadow: 15px 15px 10px gray;
+	border-radius: 15px;
+}
+
+.square {
+	height: 80px;
+	width: 80px;
+	background-color: green;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: .5s;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.square:hover {
+	color: black
+}
+
