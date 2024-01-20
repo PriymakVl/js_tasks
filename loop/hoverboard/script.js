@@ -14,5 +14,6 @@ for(let k = 0; k < divs.length; k++) {
 }
 
 function getRandomColor() {
-    return colors[Math.floor(Math.random() * colors.length)]
+    let randomIndex = Math.floor(Math.random() * colors.length);
+    return colors[randomIndex];
 }

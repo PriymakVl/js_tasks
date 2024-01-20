@@ -7,25 +7,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  color: yellow;
+  margin-bottom: 30px;
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 400px;
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+  gap: 3px;
 }
 
 .container div {
   background-color: #1d1d1d;
   box-shadow: 0 0 2px #000;
-  height: 16px;
-  width: 16px;
-  margin: 2px;
   transition: 2s ease;
 }
 
