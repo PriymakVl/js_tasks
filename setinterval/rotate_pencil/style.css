@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-family: sans-serif;
+  letter-spacing: .6rem;
+}
+
+#container {
+  position: relative;
+  background: #757780;
+  height: 60vh;
+  width: 60vh;
+  border-radius: 50%;
+  /* animation: infiniteDraw 4s linear infinite; */
+}
+
+#line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2vh solid #333;
+  border-right: 2vh solid #757780;
+  border-bottom: 2vh solid #757780;
+  transform: rotate(-45deg);
+}
+
+#pencil {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+}
+
+#rubber {
+  background: #f0a2a2;
+  height: 10%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#metal {
+  background: #c4d5df;
+  height: 12%;
+}
+
+#crayon {
+  position: relative;
+  background: #ffd879;
+  height: 64%;
+  width: 100%;
+}
+
+#crayon_center {
+  position: absolute;
+  background: #fdcc66;
+  height: 100%;
+  width: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#crayon_top {
+  position: relative;
+  border-top: 8vh solid #faeee0;
+  border-left: 6vh solid transparent;
+  border-right: 6vh solid transparent;
+}
+
+#crayon_tip {
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  transform: translateX(-50%);
+  border-top: 3vh solid #222;
+  border-right: 2vh solid transparent;
+  border-left: 2vh solid transparent;
+}
+
+
+@keyframes infiniteDraw {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
