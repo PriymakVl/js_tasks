@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 7em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.letter {
+  color: rgba(255, 255, 255, 0);
+  text-shadow: 0 0 .5em #fff;
+  transition: 2s;
+}
+
