@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+input {
+    width: 300px;
+    cursor: pointer;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    background: black;
+    margin: 30px;
+}
+
+#out {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#out span {
+    color: blueviolet;
+}

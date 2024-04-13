@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Change Radius</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Background Change Box</h1>
+    <div class="group">
+      <label for="red">Red</label>
+      <input type="range" id="red" value="0" min="0" max="255">
+    </div>
+    <div class="group">
+      <label for="green">Green</label>
+      <input type="range" id="green" value="0" min="0" max="255">
+    </div>
+    <div class="group">
+      <label for="blue">Blue</label>
+      <input type="range" id="blue" value="0" min="0" max="255">
+    </div>
+
+    <div id="box"></div>
+
+    <div id="out">Background Color: <span>rgb(0, 0, 0)</span></div>
+  </div>
+
+  <script  src="./script.js"></script>
+</body>
+</html>
