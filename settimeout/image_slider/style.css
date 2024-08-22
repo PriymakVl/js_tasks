@@ -4,21 +4,36 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .slider-container {
-  position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.image-container {
   width: 500px;
   height: 300px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
-.image-container {
-  display: flex;
-  transition: transform 0.4s ease-in-out;
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.image-container img:first-child {
+  opacity: 1;
 }
 
 .btn-container {
