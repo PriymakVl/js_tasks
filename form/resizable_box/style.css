@@ -1,0 +1,41 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #f0f0f0;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+}
+
+.box {
+  background-color: #4caf50;
+  transition: width 0.2s, height 0.2s;
+  width: 50px;
+  height: 50px;
+}
+
+.height-range {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%) rotate(90deg); 
+}
+
+.width-range {
+    width: 200px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%); 
+}
