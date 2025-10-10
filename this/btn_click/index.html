@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Пример с this</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+  }
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #2980b9;
+  }
+  #info {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #2c3e50;
+  }
+</style>
+</head>
+<body>
+
+<button id="btn1">Кнопка 1</button>
+<button id="btn2">Кнопка 2</button>
+<button id="btn3">Кнопка 3</button>
+
+<div id="info">Нажмите любую кнопку</div>
+
+<script>
+
+function showInfo() {
+  document.getElementById('info').textContent = 'Вы нажали: ' + this.textContent;
+}
+
+document.getElementById('btn1').onclick = showInfo;
+document.getElementById('btn2').onclick = showInfo;
+document.getElementById('btn3').onclick = showInfo;
+
+</script>
+
+</body>
+</html>
