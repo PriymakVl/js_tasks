@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Поднимающийся элемент</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #3498db;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .info {
+    margin-top: 25px;
+    font-size: 18px;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+
+<div id="box1" class="box"></div>
+<div id="box2" class="box"></div>
+<div id="box3" class="box"></div>
+<div class="info">Кликните на квадрат</div>
+
+
+<script>
+
+function lowerAll() {
+  document.getElementById('box1').style.transform = 'translateY(0)';
+  document.getElementById('box2').style.transform = 'translateY(0)';
+  document.getElementById('box3').style.transform = 'translateY(0)';
+}
+
+function rise() {
+  lowerAll();
+  this.style.transform = 'translateY(-20px)';
+}
+
+document.getElementById('box1').onclick = rise;
+document.getElementById('box2').onclick = rise;
+document.getElementById('box3').onclick = rise;
+
+</script>
+
+</body>
+</html>
